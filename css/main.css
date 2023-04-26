@@ -630,6 +630,7 @@ body .main .Education-Certificate .certificate-container .certificates .cert1 {
   transition: all 0.5s ease-in-out;
   position: relative;
   opacity: 0.4;
+  border-radius: 20px;
 }
 body .main .Education-Certificate .certificate-container .certificates .cert1 a {
   width: 100%;
@@ -638,6 +639,7 @@ body .main .Education-Certificate .certificate-container .certificates .cert1 a 
 body .main .Education-Certificate .certificate-container .certificates .cert1 a img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 body .main .Education-Certificate .certificate-container .certificates .cert1:hover {
   transform: scale(1.05);
