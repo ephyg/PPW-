@@ -267,6 +267,9 @@ firebase.initializeApp(firebaseConfig);
 // Reference message Collection
 var messageRef = firebase.database().ref('message');
 
+function getElements(id) {
+    return document.getElementById(id).value;
+}
 document.querySelector("#ContactForm").addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -276,7 +279,6 @@ document.querySelector("#ContactForm").addEventListener('submit', function(event
     var message = getElements("txt-area");
     var submit = getElements("submit")
     saveMessage(name, email, subject, message);
-    console.log(123);
     setTimeout(() => {
         document.getElementById("name").value = ""
         document.getElementById("email").value = ""
@@ -293,9 +295,7 @@ document.querySelector("#ContactForm").addEventListener('submit', function(event
     document.querySelector('#submit').style.backgroundColor = "green";
 })
 
-function getElements(id) {
-    return document.getElementById(id).value;
-}
+
 
 // Save message to firebase
 function saveMessage(name, email, subject, message) {
@@ -305,6 +305,5 @@ function saveMessage(name, email, subject, message) {
         email: email,
         subject: subject,
         message: message
-
     })
 }

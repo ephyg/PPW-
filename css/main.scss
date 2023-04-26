@@ -84,7 +84,7 @@ body {
             .profile-image {
                 margin-top: 50px;
                 height: 125px;
-                background-image: url(../Assets/Images/Profile-Picture.jpg);
+                background-image: url(../Assets/Images/profile-picture.jpg);
                 background-position: center;
                 background-size: cover;
                 width: 115px;
@@ -744,6 +744,95 @@ body {
             }
         }
 
+        .project {
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            color: white;
+            background-color: #111;
+
+            .project-container {
+                width: 100%;
+                padding-top: 30px;
+                display: flex;
+                justify-content: left;
+                align-items: left;
+                flex-direction: column;
+
+                h3 {
+                    padding-bottom: 20px;
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                }
+
+                .project-list {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    row-gap: 30px;
+                    column-gap: 40px;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .single-project {
+                        padding: 5px 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                        min-width: 400px;
+                        flex: 1;
+                        height: 200px;
+                        box-shadow: 3px 3px 5px 1px rgba(219, 211, 211, 0.25), inset 3px 3px 5px 1px rgba(219, 211, 211, 0.25);
+                        border-radius: 10px;
+                        transition: all 0.5s ease-in-out;
+
+                        h4 {
+                            font-size: 25px;
+                            // text-transform: uppercase;
+                            color: gold;
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            flex-wrap: wrap;
+                            padding: 0 30px;
+                        }
+
+                        .links {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 24px;
+                            flex-direction: row;
+                            align-items: center;
+                            width: 100%;
+                            padding: 0 10px;
+                            a{
+                                color: #149ddd;
+                            }
+                            .tools {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: rgb(219, 184, 94);
+                            }
+                        }
+
+                        &:hover {
+                            transform: scale(1.05);
+                        box-shadow: 4px 4px 8px 1px rgba(219, 211, 211, 0.25), inset 4px 4px 8px 1px rgba(219, 211, 211, 0.25);
+
+                        }
+                    }
+                }
+            }
+        }
+
         .contact {
             min-height: 100vh;
             width: 100%;
@@ -1015,7 +1104,16 @@ body {
                     }
                 }
             }
-
+            .project{
+                .project-container{
+                    .project-list{
+                        .single-project{
+                            min-width: 300px;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
             .contact {
                 .contact-container {
                     justify-content: center;
