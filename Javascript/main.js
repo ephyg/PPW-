@@ -76,7 +76,7 @@ function NavLinks() {
 }
 // Home page Section
 // Changing Career On Home Page 
-var Mycareer = document.querySelector(".web-developer")
+var Mycareer = document.querySelector(".web-developer");
 var careers = ["Software Engineer ", "Web-Developer "]
 let careersIndex = 0;
 let careersString = 0
