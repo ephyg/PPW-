@@ -135,11 +135,11 @@ var framework = document.querySelector('.framework')
 var other = document.querySelector('.other')
 
 
-let all_btn = [".html", ".css", ".javascript", ".sass", ".bootstrap", ".python", ".django", ".node-js", ".java",".cpp",".figma",".react",".git",".firebase",".sqlite",".mysql",".bash"];
+let all_btn = [".html", ".css", ".javascript", ".sass", ".bootstrap", ".python",".node-js" , ".java",".cpp",".figma",".react",".git",".firebase",".sqlite",".mysql",".bash"];
 let front_btn = [".html", ".css", ".javascript",".sass", ".bootstrap",".react"];
-let back_btn = [".django", ".node-js", ".java",".react"];
+let back_btn = [".node-js", ".java"];
 let database_btn = [".mysql",".sqlite",".firebase"];
-let framework_btn = [".bootstrap", ".django",".react"];
+let framework_btn = [".bootstrap",".react"];
 let other_btn = [".python",".cpp",".git",".figma",".bash"];
 all.addEventListener('click', function () {
     for (var i = 0; i < all_btn.length; i++) {
